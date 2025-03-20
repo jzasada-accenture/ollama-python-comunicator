@@ -1,0 +1,27 @@
+{
+    "report": {
+      "generated_at": "2025-03-17T10:00:00Z",
+      "scanner": "SimpleSAST",
+      "vulnerabilities": [
+        {
+          "id": "VULN-001",
+          "type": "SQL Injection",
+          "severity": "High",
+          "file": "src/controllers/userController.js",
+          "line": 42,
+          "description": "Unsanitized input used in SQL query.",
+          "false_positive": false
+        },
+        {
+          "id": "VULN-002",
+          "type": "Cross-Site Scripting (XSS)",
+          "severity": "Medium",
+          "file": "src/views/profile.ejs",
+          "line": 15,
+          "description": "User input is directly rendered in HTML without encoding.",
+          "false_positive": false
+        }
+      ]
+    }
+  }
+  
